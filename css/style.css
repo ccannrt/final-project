@@ -1,50 +1,68 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    color: #343336;
-    background-color: #FFFFFF;
     overflow: hidden;
+}
+
+*:focus {
+    border: solid #080037 2px;
+    padding: 3px;
+}
+
+.skip {
+    left:50%;
+    position:absolute;
+    transform:translateY(-500%);
+    color: white;
+}
+.skip:focus {
+    transform: translateY(100%);
+    background-color: #000000;
 }
 
 .header-top {
     display: grid;
     grid-row-gap: 20px;
     grid-template-columns: auto auto;
-    background-color: #080037;
+    background-color: #BBBBBB;
     padding: 30px;
 }
-#home-link {
+#large-header {
+    display: none;
+}
+
+
+
+.home-link-raw {
     display: flex;
     flex-direction: row;
     text-decoration: none;
 }
-#logo {
+.logo {
     width: 75px;
     height: 75px;
 }
-#title {
+.site-title {
     align-self: center;
     margin: 0 10px 0 10px;
     font-size: 18pt;
-    font-weight: bold;
-    color: #FCFFFE;
 }
 
-
-#linkedin {
+.linkedin-raw {
     display: grid;
 }
-#linkedin-link {
+.linkedin-link {
     align-self: center;
     justify-self: right;
 }
-#linkedin-logo {
+.linkedin-logo {
     width: 35px;
 }
 
 
 nav {
-    background-color: #342F4D;
+    background-color: #5B5B5B;
     padding: 15px 30px;
+    display: grid;
+    grid-template-columns: 100%;
 }
 nav ul {
     display: grid;
@@ -57,14 +75,15 @@ nav ul {
     display: grid;
     align-items: center;
     justify-content: center;
-    border-radius: 15px;
-    color: #FCFFFE;
+    border-radius: 0px;
+    /* color: #FFFFFF; */
 }
 .current {
     width: 90%;
     height: 90%;
+    /* padding: 20px 25px; */
     margin: auto auto;
-    background-color: #434052;
+    background-color: #BBBBBB;
 }
 
 .other {
@@ -73,30 +92,22 @@ nav ul {
 .other-page {
     height: 100%;
     width: 100%;
-    background-color: #5F5B73;
+    background-color: #BBBBBB;
     justify-self: center;
     align-self: center;
+    color: #000000;
 }
 .other-page a {
     margin: auto;
 }
-.other-page:hover {
-    background-color: #FFBF40;
-    height: 90%;
-    width: 90%;
-    color: #343336;
-}
 .other-page:active {
-    background-color: #FFBF40;
+    background-color: #101010;
     height: 90%;
     width: 90%;
-    color: #343336;
-}
-.other-page:visited {
-    color:#FCFFFE;
+    color: #000000;
 }
 .other-page a {
-    color: inherit;
+    color: #000000;
 }
 nav ul li a {
     color: #FCFFFE;
@@ -105,7 +116,14 @@ nav ul li a {
 }
 
 
-
+#high-fidelity {
+    background-color: #BBBBBB;
+    margin: 50px auto;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    padding: 15px;
+}
 .site-description {
     margin: 30px;
     font-size: 16pt;
@@ -113,180 +131,20 @@ nav ul li a {
 }
 
 
-
+main {
+    display: grid;
+}
 .projects {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-gap: 60px;
     margin: 30px 0;
-    box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-a {
-    text-decoration: none;
-    color: #343336;
-}
-a:visited {
-    color: #343336;
-}
-
-.project-caption {
-    margin: 10px 20px;
-}
-.project-name {
-    font-size: 18pt;
-    
-}
-.project-type {
-    font-size: 14pt;
-    color: #8B8892;
-    margin: 10px 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* body {
-    font-family: 'Roboto', sans-serif;
-    color: #343336;
-    background-color: #FFFFFF;
-    overflow: hidden;
-}
-
-.header-top {
-    display: grid;
-    grid-row-gap: 20px;
-    grid-template-columns: auto auto;
-    background-color: #080037;
-    padding: 30px;
-}
-#home-link {
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-}
-#logo {
-    width: 75px;
-    height: 75px;
-}
-#title {
-    align-self: center;
-    margin: 0 10px 0 10px;
-    font-size: 18pt;
-    font-weight: bold;
-    color: #FCFFFE;
-}
-
-
-#linkedin {
-    display: grid;
-}
-#linkedin-link {
-    align-self: center;
-    justify-self: right;
-}
-#linkedin-logo {
-    width: 35px;
-}
-
-
-nav {
-    background-color: #342F4D;
-    padding: 15px 30px;
-}
-nav ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    grid-gap: 20px;
-    height: 80px;
-}
-.current, .other-page {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px;
-    color: #FCFFFE;
-}
-.current {
-    width: 90%;
-    height: 90%;
-    margin: auto auto;
-    background-color: #434052;
-}
-
-.other {
-    display: grid;
-}
-.other-page {
-    height: 100%;
+    box-shadow: none;
+    justify-self: center;
     width: 100%;
-    background-color: #5F5B73;
-    justify-self: center;
-    align-self: center;
 }
-.other-page a {
-    margin: auto;
-}
-.other-page:hover {
-    background-color: #FFBF40;
-    height: 90%;
-    width: 90%;
-    color: #343336;
-}
-.other-page:active {
-    background-color: #FFBF40;
-    height: 90%;
-    width: 90%;
-    color: #343336;
-}
-.other-page:visited {
-    color:#FCFFFE;
-}
-.other-page a {
-    color: inherit;
-}
-nav ul li a {
-    color: #FCFFFE;
-    text-decoration: none;
-    letter-spacing: 1px;
-}
-
-
-
-.site-description {
-    margin: 30px;
-    font-size: 16pt;
-    line-height: 180%;
-}
-
-
-
-.projects {
+.project {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 60px;
-    margin: 30px 0;
-    box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 a {
     text-decoration: none;
@@ -295,9 +153,13 @@ a {
 a:visited {
     color: #343336;
 }
-
+.project-img {
+    width: 100%;
+    /* justify-self: center; */
+}
 .project-caption {
     margin: 10px 20px;
+    /* justify-self: center; */
 }
 .project-name {
     font-size: 18pt;
@@ -305,6 +167,121 @@ a:visited {
 }
 .project-type {
     font-size: 14pt;
-    color: #8B8892;
+    color: inherit;
     margin: 10px 0;
-} */
+}
+
+.home-link, .linkedin, #project-1-img, #project-2-img, .site-description {
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    nav ul {
+        min-width: 540px;
+        width: 75%;
+        justify-self: center;
+    }
+    .linkedin-logo {
+        /* min-width: 35px; */
+        max-width: 55px;
+        width: 100%;
+    }
+    .linkedin-link {
+        width: 50%;
+        max-width: 55px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    #small-header {
+        display: none;
+    }
+    #large-header {
+        display: grid;
+        grid-template-columns: 50% 40% 10%;
+        background-color: #BBBBBB;
+        padding: 30px;
+    }
+    
+    
+    
+    
+    nav {
+        background-color: inherit;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+
+
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        grid-gap: 20px;
+        height: 80px;
+        min-width: 0;
+    }
+
+
+
+    .current, .other-page {
+        display: grid;
+        align-items: center;
+        /* justify-content: right; */
+        border-radius: 0px;
+    }
+
+    .current {
+        width: 90%;
+        height: 90%;
+        /* padding: 20px 25px; */
+        margin: auto auto;
+        background-color: inherit;
+    }
+
+    .other {
+        display: grid;
+    }
+    .other-page {
+        height: 100%;
+        width: 100%;
+        background-color: inherit;
+        justify-self: center;
+        align-self: center;
+    }
+    .other-page a {
+        margin: auto;
+    }
+    .other-page:active {
+        background-color: #101010;
+        height: 90%;
+        width: 90%;
+        color: #343336;
+    }
+    
+    .other-page a {
+        color: inherit;
+    }
+
+    nav ul li a {
+        color: #FCFFFE;
+        text-decoration: none;
+        letter-spacing: 1px;
+    }
+
+    .projects {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        width: auto;
+        margin: 0 30px;
+    }
+    .project-caption {
+        margin: 10px 5px;
+    }
+
+    #high-fidelity {
+        width: 20%;
+    }
+}

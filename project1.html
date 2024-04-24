@@ -4,54 +4,178 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style-prj1.css">
     <title>Project: National Parks Planning Redesign</title>
 </head>
 <body>
+    <a class="skip" href="#main">Skip to Main Content</a>
     <header>
-        <a href="index.html">
-            <img src="images/logo.png" alt="Logo for Collin Cannaert's Portfolio site: Three green elongated semi-ellipses, the smallest on the left and biggest on the right" id="logo">
-        <h1>Collin Cannaert's portfolio site</h1>
-        </a>
-        <nav>
-            <ul>
-                <li>WORK</li>
-                <li>RÉSUMÉ</li>
-                <li><a href="https://www.linkedin.com/in/collin-cannaert"><img src="images/linkedin.png" alt="LinkedIn logo: A blue square with rounded edges and a white, lowercase I and N centered." id="linkedin"></a></li>
-            </ul>
-        </nav>
+        <div id="small-header">
+            <div class="header-top">
+                
+                <a href="index.html" class="home-link">
+                    <img src="images/logo.png" alt="Logo for Collin Cannaert's Portfolio site: Three green elongated semi-ellipses, the smallest on the left and biggest on the right" class="logo">
+                    <h1 class="site-title">Collin Cannaert's Portfolio Site</h1>
+                </a>
+                
+                <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/collin-cannaert" target="_blank" class="linkedin-link"><img src="images/linkedin.png" alt="LinkedIn logo: A blue square with rounded edges and a white, lowercase I and N centered." class="linkedin-logo"></a>
+                </div>
+
+            </div>
+            <nav>
+                <ul>
+                    <li class="current">WORK</li>
+                    
+                    <li class="other">
+                            <a href="" class="other-page">RÉSUMÉ</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+        
+        <div id="large-header">
+
+                <a href="index.html" class="home-link">
+                    <img src="images/logo.png" alt="Logo for Collin Cannaert's Portfolio site: Three green elongated semi-ellipses, the smallest on the left and biggest on the right" class="logo">
+                    <h1 class="site-title">Collin Cannaert's Portfolio Site</h1>
+                </a>
+
+
+                <nav>
+                    <ul>
+                        <li class="current">WORK</li>
+                        
+                        <li class="other">
+                                <a href="" class="other-page">RÉSUMÉ</a>
+                        </li>
+    
+                    </ul>
+                </nav>
+
+                <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/collin-cannaert" target="_blank" class="linkedin-link"><img src="images/linkedin.png" alt="LinkedIn logo: A blue square with rounded edges and a white, lowercase I and N centered." class="linkedin-logo"></a>
+                </div>
+            
+        </div>
+            
+        
+        
     </header>
-    <main>
+    <main id="main">
         <div class="header">
-            <div>
-                <h1>Reimaging National Park Service Trip Planning</h1>
-                <h2>Product Design</h2>
+            <div class="page-title">
+                <h1 class="project-title">Reimagining National Park Service Trip Planning</h1>
+                <h2 class="project-type">Product Design</h2>
             </div>
             <div>
                 <ul>
                     <li>Timeline: 9/2023 - 12/2023</li>
-                    <li>Solo UX Designer</li>
+                    <li>Role: Solo UX Designer</li>
                 </ul>
             </div>
-            <img src="images/phone-app.png">
+            <img src="images/phone-app.png" class="phone-app-img">
         </div>
+       
         <div class="nps-overview">
             <img src="images/current-site.png">
-            <p>The the National Park Service website, NPS.gov, is the hub for all official information for National Parks. It is the first places many prospective park visitors will get information about parks: Where to go, what to do, when they should go, where to park, accessibility info, etc.. As a result, nps.gov serves a wide range of users, from teenage to retired, all 50 states and international, and folks of all interests, backgrounds, and abilities.</p>
+            <p class="nps-overview-p">The the National Park Service website, NPS.gov, is the hub for all official information for National Parks. It is the first places many prospective park visitors will get information about parks: Where to go, what to do, when they should go, where to park, accessibility info, etc.. As a result, nps.gov serves a wide range of users, from teenage to retired, all 50 states and international, and folks of all interests, backgrounds, and abilities.</p>
         </div>
-        <div class="project-goals">
-            <h1>Project Goals</h1>
-            <h2>The current workflow</h2>
-            <p>Suppose you're planning a trip to Bryce Canyon National Park. The first order of business is finding some things to do. Consider the workflow of searching for hiking trails:</p>
-            <div class="current-workflow">
-                <div class="hiking-page">
-                    
+        
+        <div class="formulating-goals">
+            <h2>Formulating project goals</h2>
+            <div class="background-research">
+                <h3>Background Research</h3>
+                <h4>Guiding Questions</h4>
+                <ul class="guiding-questions">
+                    <li>
+                        <img src="images/_.png">
+                        <div>What does the trip-planning experience look like?</div>
+                    </li>
+                    <li>
+                        <img src="images/_.png">
+                        <div>What features do people use to plan trips?</div>
+                    </li>
+                    <li>
+                        <img src="images/_.png">
+                        <div>What information is important for people to have when planning a trip?</div>
+                    </li>
+                    <li>
+                        <img src="images/_.png">
+                        <div>How should that information be presented?</div>
+                    </li>
+                </ul>
+                <div class="comparative-analysis">
+                    <h4>Comparative Analysis</h4>
+                    <p>A comparative analysis of seven sites and applications was conducted to see what other sites and apps have done to solve similar problems, and observe any patterns between them. The sites or apps analyzed were recreation.gov, expedia.com, wanderlog.com, zillow.com, the National Park Service mobile app, National Park Trail Guide mobile app by Adventure Projects, and alltrails.com.</p>
+                    <ul class="competitors">
+                        <li class="competitor">
+                            <img src="images/recdotgov.png" class="competitor-img">
+                            <p>recreation.gov</p>
+                        </li>
+                        <li class="competitor">
+                            <img src="images/expedia.png" class="competitor-img">
+                            <p>expedia.com</p>
+                        </li>
+                        <li class="competitor">
+                            <img src="images/zillow.png" class="competitor-img">
+                            <p>zillow.com</p>
+                        </li>
+                        <li class="competitor">
+                            <img src="images/alltrails.png" class="competitor-img">
+                            <p>alltrails.com & app</p>
+                        </li>
+                        <li class="competitor">
+                            <img src="images/nps.png" class="competitor-img">
+                            <p>NPS mobile app</p>
+                        </li>
+                        <li class="competitor">
+                            <img src="images/wanderlog.png" class="competitor-img">
+                            <p>wanderlog.com</p>
+                        </li>
+                        <li class="competitor">
+                            <img src="images/adventure-project.png" class="competitor-img">
+                            <p id="adventure-project-p">Adventure Project's National Park Trail Guide app</p>
+                        </li>
+                    </ul>
+                    <h5>Findings</h5>
+                    <ul class="research-findings">
+                        <li>All sites included a map as an option for viewing POIs. Five of the seven sites featured the map as the primary display.</li>
+                        <li>All of the maps were interactive, allowing you to scroll, zoom, and click on POI icons to see more information. Sites/apps related to hiking displayed trails with a colored path.</li>
+                        <li>Some of the maps remained fixed as the respective POI list scrolled. In these cases selecting a POI on the map selected the POI listing and vice versa. When the map scrolled with the rest of the page, POIs within the map did not directly interact with the POIs in the list and vice versa.</li>
+                        <li>For all sites or apps except the National Park Service mobile app, the list and map of POIs contained all POIs--barring applying a filter. You would not need to navigate to another page to view additional listings for the same location.</li>
+                    </ul>
                 </div>
-                <div class="trail-list">
-
+                <div>
+                    <h4>Interviews</h4>
+                    <p>Two interviews were conducted to gain a baseline understanding of users' experiences using nps.gov and other sites to trip plan.</p>
+                    <div class="interviewees">
+                        <div class="interviewee">
+                            <img src="images/interviewee1.png" class="interviewee-img">
+                            <ul class="interviewee-info">
+                                <li>Age: 27</li>
+                                <li>Occupation: Student</li>
+                                <li>Pronouns: She/her</li>
+                                <li>Hometown: Oakland, CA</li>
+                            </ul>
+                            <p>Interviewee 1 is a graduate student studying environmental policy. She visits National Parks several times a year and has gone on a few large road-trips, some solo and some with groups. She likes planning out a general sketch of what she wants to do before leaving on a trip but leave room for flexibility. Because of her interest in the outdoors, she’s motivated to go off the beaten-path and discover parks’ hidden gems.</p>
+                        </div>
+                        <div class="interviewee">
+                            <img src="images/interviewee2.png" class="interviewee-img">
+                            <ul class="interviewee-info">
+                                <li>Age: 62</li>
+                                <li>Occupation: Engineer</li>
+                                <li>Pronouns: He, him</li>
+                                <li>Hometown: Detroit, MI</li>
+                            </ul>
+                            <p>Interviewee 2 is an engineer who’s lived in Michigan his whole life. He and his wife go on trips to visit National Parks every few years, and have recently gone on a multi-state trip last summer. They prefer staying in hotels and visiting Parks during the day, or renting an RV and staying in Parks’ RV parks.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="specific-trail">
-
+            </div>
+            <div class="goals">
+            </div>
                 </div>
             </div>
         </div>

@@ -47,14 +47,14 @@ document.querySelector("#high-fidelity").addEventListener("click", function(){
     document.querySelector(".header-top").style.cssText = "display: grid; grid-row-gap: 20px; grid-template-columns: auto auto; background-color: #080037; padding: 30px;";
     document.querySelector("nav").style.cssText = "background-color: #342F4D;";
     // document.querySelector(".current").style.cssText = "background-color: #434052; color: #FCFFFE; border-radius: 15px; color: #FCFFFE;";
-    document.querySelector(".other-page").style.cssText = "color: #FCFFFE; border-radius: 15px; background-color: #5F5B73; color: #FCFFFE;";
+    document.querySelector(".other-page").style.cssText = "color: #FCFFFE; border-radius: 15px; background-color: #5F5B73;";
     document.querySelector("#large-header").style.cssText = "background-color: #080037;";
     document.querySelector("#high-fidelity").style.display = "none";
     document.querySelector(".site-description").style.display = "inline";
 
     console.log(document.querySelector(".other-page").style.backgroundcolor);
 
-    var titles = document.querySelectorAll(".title");
+    var titles = document.querySelectorAll(".site-title");
     titles.forEach(function(title) {
         title.style.cssText = "align-self: center; margin: 0 10px 0 10px; font-size: 18pt; font-weight: bold; color: #FCFFFE;";
     });
